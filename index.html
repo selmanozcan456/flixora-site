@@ -28,3 +28,113 @@
 </body>
 </html>
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixora - Film ve Dizi Platformu</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #E50914;
+        }
+        .logo {
+            color: #E50914;
+            font-size: 32px;
+            font-weight: 900;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background-color: #000;
+        }
+        .hero iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .content {
+            padding: 40px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-left: 4px solid #E50914;
+            padding-left: 10px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+        .movie-card {
+            background-color: #1f1f1f;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .movie-info {
+            padding: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .movie-meta {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">FLIXORA</a>
+    </header>
+
+    <div class="hero">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+
+    <div class="content">
+        <h2>Popüler Filmler</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="https://picsum.photos/300/450?random=1" alt="Film" class="movie-img">
+                <div class="movie-info">
+                    <div class="movie-title">Yakında Eklenecek</div>
+                    <div class="movie-meta">2026 • Macera</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
